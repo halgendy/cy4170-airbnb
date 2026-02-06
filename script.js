@@ -62,7 +62,7 @@ async function loadListings() {
             card.className = 'card';
             
             card.innerHTML = `
-                <img src="${listing.picture_url}" alt="${listing.name}" class="thumbnail" onerror="this.src='favicon.png'; this.removeAttribute('alt');">
+                <img src="${listing.picture_url}" alt="${listing.name}" class="thumbnail" onerror="this.src='IMG_NA.png'; this.removeAttribute('alt');">
                 <div class="price-tag">${listing.price}</div>
                 <div class="value-indicator" style="color: ${dollarColor}" title="${tooltipText}">$</div>
                 
@@ -72,7 +72,7 @@ async function loadListings() {
                     <div class="amenities"><strong>Amenities:</strong> ${amenitiesList}</div>
                     
                     <div class="host-info">
-                        <img src="${listing.host_picture_url}" alt="${listing.host_name}" class="host-photo" onerror="this.src='/IMG_NA.png'">
+                        <img src="${listing.host_picture_url}" alt="${listing.host_name}" class="host-photo" onerror="this.src='IMG_NA.png'">
                         <span class="host-name">Hosted by ${listing.host_name}</span>
                     </div>
                 </div>
