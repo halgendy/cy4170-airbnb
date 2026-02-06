@@ -72,7 +72,7 @@ async function loadListings() {
                     <div class="amenities"><strong>Amenities:</strong> ${amenitiesList}</div>
                     
                     <div class="host-info">
-                        <img src="${listing.host_picture_url}" alt="${listing.host_name}" class="host-photo" onerror="this.src='https://via.placeholder.com/40?text=Host'">
+                        <img src="${listing.host_picture_url}" alt="${listing.host_name}" class="host-photo" onerror="this.src='/IMG_NA.png'">
                         <span class="host-name">Hosted by ${listing.host_name}</span>
                     </div>
                 </div>
